@@ -1,4 +1,4 @@
-..bg-blue {
+.bg-blue {
     background-color: #03A9F5;
 }
 .hero-bg {
@@ -17,19 +17,45 @@
         display: inline-block;
         width: 600px;
         margin-left: calc((100% - 600px) / 2);
+        text-align: center;
     }
+        .hero-row > .logo {
+            height: 40px;
+            width: 100%;
+            margin-bottom: 60px;
+            object-fit: contain;
+            object-position: center;
+        }
+        .title {
+            text-transform: uppercase;
+            font-size: 60px;
+            line-height: 50px;
+            margin-bottom: 30px;
+        }
+        .sub-title {
+            font-size: 22px;
+            line-height: 30px;
+            margin-bottom: 60px;
+        }
+        .clock {
+            margin-bottom: 60px;
+        }
+        .hero-row > .form {
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-bottom: 20px;
+        }
     .row {
         display: inline-block;
         width: 1000px;
         margin-left: calc((100% - 1000px) / 2);
     }
         .left-column {
-            display: inline-block;
             width: 50%;
             float: left;
         }
         .right-column {
-            display: inline-block;
             width: 40%;
             float: right;
         }
@@ -44,16 +70,13 @@
             width: 600px;
             float: left;
             margin-left: calc((100% - 600px) / 2);
-        } 
         }
-
 @media (max-width: 1100px) {
     .row {
         width: 800px;
         margin-left: calc((100% - 800px) / 2);
     }
 }
-
 @media (max-width: 900px) {
     .row {
         width: 600px;
@@ -68,7 +91,6 @@
             float: left;
         }
 }
-
 @media (max-width: 700px) {
     .hero-row {
         width: 400px;
@@ -83,7 +105,6 @@
         margin-left: calc((100% - 400px) / 2);
     }
 }
-
 @media (max-width: 500px) {
     .container {
         padding-left: 20px;
@@ -101,4 +122,4 @@
         width: 100%;
         margin-left: 0;
     }
-} 
+}
